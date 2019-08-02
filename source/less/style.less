@@ -4,8 +4,6 @@
 @bg-light-blue: #81b3d2;
 @bg-grey: #f2f2f2;
 
-
-
 // file scaffolder.less
 
 // Изменим блочную модель
@@ -13,16 +11,17 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
-
 
 body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: @black;
@@ -79,7 +78,7 @@ input[type="radio"].visually-hidden {
 .site-list__item {
   background-color: @bg-light-blue;
   text-align: center;
-  box-shadow: inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);
+  // box-shadow: inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -114,7 +113,7 @@ input[type="radio"].visually-hidden {
 
 
 .welcome-section {
-  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-image: "url(../img/bg-back-mobile@1x.jpg)";
   background-repeat: no-repeat;
   background-position: 50% 25%;
   text-align: center;
@@ -151,9 +150,7 @@ input[type="radio"].visually-hidden {
     color: #333333;
     margin: 0 auto;
   }
-
 }
-
 
 // file advantages.less
 .advantages__item {
@@ -218,7 +215,6 @@ input[type="radio"].visually-hidden {
 .activities__item {
   display: block;
   width: 210px;
-  // height: 92px;
   margin: 35px 0;
 
   &:last-of-type {
@@ -237,7 +233,6 @@ input[type="radio"].visually-hidden {
     line-height: 26px;
     color: @black;
     text-align: left;
-
   }
 
   &-text {
@@ -249,8 +244,6 @@ input[type="radio"].visually-hidden {
     margin: 0;
   }
 }
-
-
 
 // file options__list
 
@@ -278,7 +271,6 @@ input[type="radio"].visually-hidden {
     line-height: 26px;
     color: @black;
     text-align: center;
-
   }
 
   &-number {
@@ -297,9 +289,7 @@ input[type="radio"].visually-hidden {
     text-align: center;
     margin: 0;
   }
-
 }
-
 
 // file hotel-search.less
 
@@ -328,7 +318,6 @@ input[type="radio"].visually-hidden {
     text-align: center;
     margin: 0;
   }
-
 }
 
 .main-footer {
@@ -401,46 +390,44 @@ input[type="radio"].visually-hidden {
 }
 
 .photo {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    &__image {
-      padding-bottom: 20px;
-    }
+  &__image {
+    padding-bottom: 20px;
+  }
 
-    &__info {
-      text-align: left;
-    }
+  &__info {
+    text-align: left;
+  }
 
-    &__heading {
-      margin-top: 0;
-      margin-bottom: 5px;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 24px;
-      color: @black;
+  &__heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: @black;
+  }
 
-    }
+  &__author {
+    margin-top: 0;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: @darkgrey;
+    text-transform: none;
+  }
 
-    &__author {
-      margin-top: 0;
-      margin-bottom: 7px;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 26px;
-      color: @darkgrey;
-      text-transform: none;
-    }
-
-    &__likes {
-      margin: 0;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 24px;
-      color: @black;
-      padding-left: 35px;
-    }
+  &__likes {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: @black;
+    padding-left: 35px;
+  }
 }
-
 
 // file videos.less
 
@@ -475,5 +462,4 @@ input[type="radio"].visually-hidden {
     line-height: 24px;
     color: @darkgrey;
   }
-
 }
