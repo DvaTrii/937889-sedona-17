@@ -1,5 +1,5 @@
 .welcome-section {
-  background-image: "url(../img/bg-back-mobile@1x.jpg)";
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 25%;
   text-align: center;
@@ -34,4 +34,16 @@
   text-align: center;
   color: #333333;
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome-section__slogans-underrated {
+    width: 490px;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .welcome-section__slogans-heading-reasons {
+    width: 490px;
+  }
 }

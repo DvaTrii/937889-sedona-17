@@ -46,3 +46,17 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* так как нет отступов задаем ширину боди а не контейнеру */
+@media (min-width: @tablet-width) {
+  body {
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    width: auto;
+  }
+}
