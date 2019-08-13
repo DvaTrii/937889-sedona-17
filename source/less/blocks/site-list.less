@@ -41,14 +41,13 @@
 
   .site-list__item {
     background-color: @white;
-    width: 154px;
+    width: 153px;
     height: 56px;
     padding-top: 15px;
     padding-bottom: 15px;
   }
 
   .site-list__item:first-of-type {
-    margin-left: auto;
     order: 1;
   }
 
@@ -62,7 +61,6 @@
 
   .site-list__item:nth-of-type(4) {
     order: 5;
-    margin-right: auto;
   }
 
   .site-list__item:nth-of-type(5) {
@@ -71,17 +69,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .site-list {
-    flex-direction: row;
-  }
-
-  .site-list__link {
-    color: @black;
-  }
-
   .site-list__item {
-    background-color: @white;
     width: 240px;
-    height: 56px;
   }
 }
