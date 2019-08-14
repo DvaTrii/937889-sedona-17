@@ -35,6 +35,65 @@
 
 .photos__list {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .photos {
+    padding-left: auto;
+    padding-right: auto;
+  }
+
+  .photos__inner-header {
+    width: 428px;
+  }
+
+  .photos__heading {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .photos__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 648px;
+  }
+
+  .photos__item {
+    margin: 0;
+    width: 324px;  //временно для сетки
+
+    &:first-of-type {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;  //временно для сетки
+    }
+
+    &:last-of-type {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .photos__item {
+    margin: 0;
+    width: 400px;  //временно для сетки
+
+    &:first-of-type {
+      width: 1200px;  //временно для сетки
+    }
+  }
+
+  .photos__list {
+    width: 1200px;
+  }
 }
