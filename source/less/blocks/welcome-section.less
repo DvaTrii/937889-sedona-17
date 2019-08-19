@@ -1,10 +1,17 @@
 .welcome-section {
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-color: #ddebf4;
   background-position: 50% 25%;
+  background-size: cover;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 88px;
   padding-bottom: 80px;
+}
+
+.welcome-section-not-index {
+  padding-top: 50px;
+  padding-bottom: 62px;
 }
 
 .welcome-section__slogans {
@@ -22,21 +29,25 @@
   line-height: 26px;
   text-align: center;
   color: #000000;
-  margin: 0 auto 27px auto;
+  margin: 0 auto 30px auto;
 }
 
 .welcome-section__slogans-heading-reasons {
   display: block;
-  width: 255px;
+  width: 254px;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
   text-align: center;
   color: #333333;
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 
 @media (min-width: @tablet-width) {
+  .welcome-section {
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+  }
+
   .welcome-section__slogans-underrated {
     width: 490px;
     font-size: 21px;
@@ -45,5 +56,12 @@
 
   .welcome-section__slogans-heading-reasons {
     width: 490px;
+    margin-bottom: 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome-section {
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
   }
 }
