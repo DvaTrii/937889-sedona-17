@@ -1,17 +1,18 @@
 .activities__list {
   list-style: none;
   margin: 0;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  padding-left: 70px;
+  padding-left: 40px;
+  padding-top: 32px;
+  padding-bottom: 40px;
   padding-right: 5px;
   background-color: @white;
 }
 
 .activities__item {
+  position: relative;
   display: block;
   width: 210px;
-  margin: 35px auto 0 auto;
+  margin: 30px auto 0 auto;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -20,10 +21,37 @@
   &:first-of-type {
     margin-top: 0;
   }
+
+  &:first-of-type::before {
+    position: absolute;
+    content: url("../../img/icon-house.svg");
+    width: 37px;
+    height: 36px;
+    top: -8px;
+    left: -50px;
+  }
+
+  &:nth-of-type(2)::before {
+    position: absolute;
+    content: url("../../img/icon-gift.svg");
+    width: 32px;
+    height: 38px;
+    top: -10px;
+    left: -47px;
+  }
+
+  &:nth-of-type(3)::before {
+    position: absolute;
+    content: url("../../img/icon-burger.svg");
+    width: 40px;
+    height: 35px;
+    top: -6px;
+    left: -54px;
+  }
 }
 
 .activities__item-heading {
-  margin: 0 0 12px 0;
+  margin: 0 0 16px 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -44,25 +72,59 @@
   .activities__list {
     display: flex;
     flex-wrap: nowrap;
-    padding: 5px;
+    padding: 5px 0;
   }
 
   .activities__item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    margin-top: 145px;
+    margin-bottom: 50px;
+    padding: 5px;
     width: 256px;
+
+    &:first-of-type {
+      margin-top: 145px;
+    }
 
     &:nth-of-type(2) {
       order: 1;
+    }
+
+    &:first-of-type::before {
+      position: absolute;
+      content: url("../../img/icon-house.svg");
+      width: 75px;
+      height: 72px;
+      top: -95px;
+      left: 90px;
+    }
+
+    &:nth-of-type(2)::before {
+      position: absolute;
+      content: url("../../img/icon-gift.svg");
+      width: 64px;
+      height: 75px;
+      top: -100px;
+      left: 95px;
+    }
+
+    &:nth-of-type(3)::before {
+      position: absolute;
+      content: url("../../img/icon-burger.svg");
+      width: 77px;
+      height: 68px;
+      top: -92px;
+      left: 89px;
     }
   }
 
   .activities__item-heading {
     text-align: center;
     width: 163px;
+    font-size: 21px;
+    margin-bottom: 23px;
   }
 
   .activities__item-text {
@@ -72,11 +134,30 @@
 }
 
 @media (min-width: @desktop-width) {
+  .activities {
+    margin-bottom: 20px;
+  }
+
   .activities__item {
     width: 400px;
 
     &:nth-of-type(2) {
       order: 1;
+    }
+
+    &:first-of-type::before {
+      top: -95px;
+      left: 160px;
+    }
+
+    &:nth-of-type(2)::before {
+      top: -100px;
+      left: 165px;
+    }
+
+    &:nth-of-type(3)::before {
+      top: -92px;
+      left: 159px;
     }
   }
 

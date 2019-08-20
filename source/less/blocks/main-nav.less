@@ -1,3 +1,12 @@
+.main-nav {
+  position: relative;
+  width: 320px;
+  //min-height: 55px;
+  margin: 0 auto;
+
+  background-color: @bg-light-blue;
+}
+
 .main-nav__list {
   list-style: none;
   margin: 0;
@@ -6,6 +15,82 @@
 
 .main-nav__toggle {
   position: absolute;
-  left: 260px;  // временно
-  top: 250px;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 55px;
+  height: 56px;
+  cursor: pointer;
+  border: none;
+  background-color: @white;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 16px;
+  left: 16px;
+
+  width: 23px;
+  height: 4px;
+
+  background-color: @bg-light-blue;
+  box-shadow: 0 8px 0 0 @bg-light-blue, 0 16px 0 0 @bg-light-blue;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 0;
+  background-color: @bg-light-blue;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 12px;
+    width: 28px;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+
+    &--static {
+      display: block;
+    }
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: auto;
+    background-color: @white;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }
