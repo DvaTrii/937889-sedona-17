@@ -22,6 +22,27 @@
   color: @black;
 }
 
+.main-footer__copyright {
+  position: relative;
+}
+
+.main-footer__copyright-button {
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 34px;
+  top: -6px;
+  left: 95px;
+
+  &:hover .main-footer__copyright-logo {
+    fill: @bg-light-blue;
+  }
+
+  &:active .main-footer__copyright-logo {
+    fill-opacity: 0.3;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .main-footer {
     display: flex;

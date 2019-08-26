@@ -6,3 +6,32 @@
   margin: 0;
   padding: 0;
 }
+
+.social-list__item {
+  margin-right: 6px;
+
+  &:last-child {
+    margin-right: 6px;
+  }
+}
+
+.social-list__button {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  background-color: @bg-light-blue;
+
+  &:hover {
+    background-color: @bg-light-blue-darker;
+  }
+
+  &:active {
+    background-color: @bg-light-blue-darkest;
+  }
+}
+
+.social-list__button:active .social-list__logo {
+  fill-opacity: 0.3;
+}

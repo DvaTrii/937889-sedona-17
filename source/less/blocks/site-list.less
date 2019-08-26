@@ -6,13 +6,13 @@
   padding-bottom: 8px;
 
   &:hover {
-    background-color: #669ec0;
-    border-top-color: #669ec0;
+    background-color: @bg-light-blue-darker;
+    border-top-color: @bg-light-blue-darker;
   }
 
   &:active {
-    background-color: #5496bd;
-    border-top-color: #5496bd;
+    background-color: @bg-light-blue-darkest;
+    border-top-color: @bg-light-blue-darkest;
 
     & .site-list__link {
       color: rgba(255, 255, 255, 0.3);
@@ -21,6 +21,7 @@
 }
 
 .site-list__item:last-of-type {
+  position: relative;
   background-color: @white;
   padding-top: 0;
   padding-bottom: 0;
