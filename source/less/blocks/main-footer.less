@@ -1,7 +1,11 @@
 .main-footer {
   background-color: @white;
-  padding: 20px 5px 30px 5px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 230px;
+  margin: 0 20px;
+  padding: 50px 0;
 }
 
 .main-footer__hashtag {
@@ -14,37 +18,32 @@
 }
 
 .main-footer__copyright-text {
-  margin-top: 45px;
-  margin-bottom: 30px;
+  margin: 0;
   font-size: 14px;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 48px;
   color: @black;
+  padding-right: 12px;
 }
 
 .main-footer__copyright {
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .main-footer__copyright-logo {
   fill: @black;
 }
 
-.main-footer__copyright-logo:hover {
-  fill: @bg-light-blue;
-}
-
 .main-footer__copyright-button {
-  position: absolute;
   display: block;
   width: 26px;
-  height: 34px;
-  top: -6px;
-  left: 95px;
+  height: 43px;
+  padding-top: 6px;
 
-  //&:hover .main-footer__copyright-logo {
-  //  fill: @bg-light-blue;
-  //}
+  &:hover .main-footer__copyright-logo {
+    fill: @bg-light-blue;
+  }
 
   &:active .main-footer__copyright-logo {
     fill-opacity: 0.3;
@@ -53,9 +52,11 @@
 
 @media (min-width: @tablet-width) {
   .main-footer {
-    display: flex;
-    justify-content: space-around;
+    margin: 0 60px;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    min-height: auto;
   }
 
   .main-footer__hashtag {
@@ -64,5 +65,11 @@
 
   .main-footer__copyright-text {
     margin: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer {
+    margin: 0 120px;
   }
 }
