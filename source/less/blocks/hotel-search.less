@@ -55,6 +55,20 @@
   }
 }
 
+.hotel-search__map {
+  background-color: @white;
+  backgroung-image: url("../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 320px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-size: 640 auto;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .hotel-search__heading {
     font-size: 30px;
@@ -73,6 +87,21 @@
   .hotel-search__button {
     width: 458px;
   }
+
+  .hotel-search__map {
+    background-color: @white;
+    backgroung-image: url("../img/bg-map-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 768px;
+
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-size: 1536 auto;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -82,5 +111,18 @@
 
   .hotel-search__text {
     margin-bottom: 48px;
+  }
+
+  .hotel-search__map {
+    background-color: @white;
+    backgroung-image: url("../img/bg-map-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-size: 2400 auto;
+    }
   }
 }
