@@ -35,3 +35,151 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.videos__controls {
+  display: flex;
+  justify-content: space-between;
+  height: 66px;
+  margin: 0 20px;
+  background-color: @bg-grey;
+  position: relative;
+}
+
+.videos__image {
+  display: block;
+  padding: 0;
+}
+
+.videos__progress::before,
+.videos__progress::after {
+  left: 50px;
+  width: 9px;
+  height: 10px;
+  background-color: @white;
+  border-radius: 50%;
+}
+
+.videos__progress {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  width: 280px;
+  min-height: 45px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.videos__progress::before {
+  right: 22px;
+  background-color: rgba(255, 255, 255, 0.2);
+  left: 22px;
+  height: 3px;
+  width: 235px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  display: block;
+  transform: translate(0, -50%);
+}
+
+.videos__progress::after {
+  left: 50px;
+  width: 11px;
+  height: 10px;
+  background-color: @white;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: 50%;
+  display: block;
+  transform: translate(0, -50%);
+}
+
+.videos__button {
+  width: 70px;
+  min-height: 66px;
+  background: 0 0;
+  border: none;
+  outline: none;
+}
+
+.videos__button:hover .videos__icon {
+  fill: @darkgrey;
+}
+
+.videos__button:active .videos__icon {
+  fill: @darkgrey;
+  fill-opacity: 0.3;
+}
+
+.videos__button:nth-of-type(2) {
+  width: 40px;
+  margin-left: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .videos {
+    width: 648px;
+    margin: 0 auto;
+    padding-bottom: 54px;
+  }
+
+  .videos__controls {
+    margin: -93px 0 0;
+    height: 93px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 15px;
+  }
+
+  .videos__progress {
+    position: relative;
+    width: auto;
+    min-height: 45px;
+    background-color: rgba(255, 255, 255, 0);
+    top: 0;
+  }
+
+  .videos__progress::before {
+    width: 389px;
+  }
+
+  .videos__progress::after {
+    left: 125px;
+  }
+
+  .videos__icon {
+    fill: @white;
+  }
+
+  .videos__button:hover .videos__icon {
+    fill: @white;
+    fill-opacity: 0.6;
+  }
+
+  .videos__button:active .videos__icon {
+    fill: @white;
+    fill-opacity: 0.3;
+  }
+
+  .videos__inner-header {
+    width: 415px;
+    margin-top: 60px;
+    margin-bottom: 70px;
+  }
+
+  .videos__heading {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .videos {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .videos__progress::before {
+    width: 540px;
+  }
+}

@@ -1,6 +1,27 @@
 .photo {
   margin-bottom: 35px;
   text-align: center;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: @grey-hover;
+    top: -15px;
+    left: -7%;
+  }
+
+  &:last-of-type::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: @grey-hover;
+    top: 400px;
+    left: -7%;
+  }
 }
 
 .photo__image {
@@ -60,6 +81,14 @@
 @media (min-width: @tablet-width) {
   .photo {
     margin-bottom: 0;
+  }
+
+  .photo::before {
+    display: none;
+  }
+
+  .photo:last-of-type::after {
+    display: none;
   }
 
   .photo__image {

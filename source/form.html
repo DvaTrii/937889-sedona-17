@@ -5,21 +5,31 @@
     <title>Седона: Форма отзыва</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <svg style="display: none;">
-      <symbol id="icon-twitter">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.841-.538 1.478-.883 1.728.704.165 1.343-.481 1.343-.481-.175.977-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.319 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.655 4.769 4.364 8.29 4.528c.216-2.24 1.171-3.74 2.993-4.375z"/>
+      <symbol viewBox="0 0 17.5 14.663" id="icon-twitter">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.841-.538 1.478-.883 1.728.704.165 1.343-.481 1.343-.481-.175.977-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.319 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.655 4.769 4.364 8.29 4.528c.216-2.24 1.171-3.74 2.993-4.375z"></path>
       </symbol>
-      <symbol id="icon-facebook">
-        <path d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z"/>
+      <symbol viewBox="0 0 8.672 18.944" id="icon-facebook">
+        <path d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z"></path>
       </symbol>
-      <symbol id="icon-youtube">
-        <path d="M17.145 0H2.835A2.842 2.842 0 000 2.835v8.345a2.842 2.842 0 002.835 2.835h14.31a2.842 2.842 0 002.835-2.835V2.835A2.844 2.844 0 0017.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z"/>
+      <symbol viewBox="0 0 19.979 14.015" id="icon-youtube">
+        <path d="M17.145 0H2.835A2.842 2.842 0 000 2.835v8.345a2.842 2.842 0 002.835 2.835h14.31a2.842 2.842 0 002.835-2.835V2.835A2.844 2.844 0 0017.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z"></path>
       </symbol>
-      <symbol id="logo-htmlacademy"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
+      <symbol viewBox="0 0 26.943 34.09" id="logo-htmlacademy">
+        <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"></path>
+      </symbol>
+      <symbol viewBox="0 0 20 20" id="icon-video-fullscreen">
+        <path d="M0 0v6h3V3h3V0H3zm3 14H0v6h6v-3H3zM17 0h-3v3h3v3h3V0zm0 17h-3v3h6v-6h-3z"></path>
+      </symbol>
+      <symbol viewBox="0 0 16 20" id="icon-video-replay">
+        <path d="M8 4V0L3 5l5 5V6c3.315 0 6 2.686 6 6s-2.685 6-6 6-6-2.686-6-6H0c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"></path>
+      </symbol>
+      <symbol viewBox="0 0 32 20" id="icon-video-subtitles">
+        <path d="M29 0H3C1.35 0 0 1.35 0 3v14c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM14.403 15.854a8.61 8.61 0 0 1-1.678.164 5.986 5.986 0 0 1-1.976-.323c-.623-.214-1.172-.562-1.646-1.041s-.852-1.103-1.133-1.868c-.28-.766-.419-1.695-.419-2.786 0-1.134.157-2.085.471-2.851.315-.768.723-1.384 1.224-1.854a4.53 4.53 0 0 1 1.679-1.008 5.86 5.86 0 0 1 1.852-.307c.66 0 1.22.045 1.678.134.457.087.835.192 1.133.313l-.448 1.92a3.332 3.332 0 0 0-.902-.265A8.244 8.244 0 0 0 12.973 6c-.915 0-1.649.325-2.206.977-.558.651-.836 1.663-.836 3.031 0 .598.067 1.142.199 1.632.132.493.334.913.603 1.26.271.349.607.619 1.01.812.402.193.867.29 1.396.29.496 0 .915-.049 1.257-.148.342-.099.639-.227.893-.38l.463 1.841c-.354.249-.803.43-1.349.539zm8.698 0a8.618 8.618 0 0 1-1.678.164 5.986 5.986 0 0 1-1.976-.323c-.623-.214-1.172-.562-1.646-1.041s-.852-1.103-1.133-1.868c-.281-.767-.421-1.695-.421-2.786 0-1.134.157-2.085.471-2.851.314-.768.723-1.384 1.223-1.854a4.526 4.526 0 0 1 1.68-1.008 5.858 5.858 0 0 1 1.851-.307c.661 0 1.221.045 1.678.134a6.05 6.05 0 0 1 1.133.313l-.446 1.918a3.314 3.314 0 0 0-.901-.265A8.569 8.569 0 0 0 21.67 6c-.915 0-1.649.325-2.206.977-.558.651-.836 1.663-.836 3.031 0 .598.067 1.142.199 1.632.132.493.334.913.603 1.26.271.349.606.619 1.009.812.402.193.868.29 1.396.29.497 0 .915-.049 1.257-.148.342-.099.64-.227.894-.38l.463 1.841c-.353.249-.803.43-1.348.539z"></path>
       </symbol>
     </svg>
     <div class="main-container">
@@ -38,7 +48,7 @@
                 <a class="site-list__link" href="#">Форма отзыва</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#">HTML Academy</a>
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               </li>
               <li class="site-list__item site-list__item--static">
                 <a class="page-header__logo" href="index.html">
@@ -54,6 +64,92 @@
         </nav>
       </header>
       <main class="page-main">
+        <section class="welcome-section welcome-section-not-index">
+          <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
+          <img class="welcome-section__image welcome-section__image-not-index" src="img/text-sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону">
+        </section>
+        <form class="form" action="https://echo.htmlacademy.ru." method="post">
+          <div class="form__inner-header">
+            <h2 class="form__heading">Оставьте свой отзыв</h2>
+            <p class="form__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях.</p>
+          </div>
+          <div class="form__items">
+            <section class="form__item form__name">
+              <h2 class="form__title form__title-name">Представьтесь<span class="form__title-hide">, пожалуйста</span>:</h2>
+              <div class="form__name-item">
+                <label class="form__name-label" for="input-name">Имя*:</label>
+                <input class="form__name-input form__name-input--wide" id="input-name" type="text" placeholder="Петр" required/>
+              </div>
+              <div class="form__name-item">
+                <label class="form__name-label" for="input-surname">Фамилия*:</label>
+                <input class="form__name-input" id="input-surname" type="text" placeholder="Иванов" required/>
+              </div>
+              <div class="form__name-item">
+                <label class="form__name-label" for="input-fathername">Отчество:</label>
+                <input class="form__name-input" id="input-fathername" type="text" placeholder="Александрович"/>
+              </div>
+            </section>
+            <section class="form__item form__contacts">
+              <h2 class="form__title form__title-contacts">Контактная информация:</h2>
+              <div class="form__contacts-items">
+                <div class="form__contacts-item">
+                  <label class="form__contacts-label" for="input-phone"><span class="form__contacts-hide">Контактный </span>телефон:</label>
+                  <input class="form__contacts-input" id="input-phone" type="tel" placeholder="Введите телефон"/>
+                  <div class="form__icon form__icon--phone"></div>
+                </div>
+                <div class="form__contacts-item">
+                  <label class="form__contacts-label" for="input-mail">Электронная почта:</label>
+                  <input class="form__contacts-input" id="input-mail" type="email" placeholder="Введите e-mail"/>
+                  <div class="form__icon form__icon--mail"></div>
+                </div>
+              </div>
+            </section>
+            <section class="form__item form__impression">
+              <h2 class="form__title form__title-impression">Ваше общее впечатление:</h2>
+              <div class="form__impression-item">
+                <input class="form__impression-input" id="input-positively" name="impression" type="radio" checked/>
+                <label class="form__impression-label" for="input-positively">Скорее положительное</label>
+              </div>
+              <div class="form__impression-item">
+                <input class="form__impression-input" id="input-negatively" name="impression" type="radio" />
+                <label class="form__impression-label" for="input-negatively">Скорее отрицательное</label>
+              </div>
+              <div class="form__impression-item">
+                <input class="form__impression-input" id="input-difficult" name="impression" type="radio" />
+                <label class="form__impression-label" for="input-difficult">Затрудняюсь ответить</label>
+              </div>
+            </section>
+            <section class="form__item form__visited">
+              <h2 class="form__title form__title-visited">Посещенные достопримечательности:</h2>
+              <div class="form__visited-items">
+                <div class="form__visited-item">
+                  <input class="form__visited-input" id="input-bridge" name="bridge" type="checkbox" checked/>
+                  <label class="form__visited-label" for="input-bridge">Мост Дьявола</label>
+                </div>
+                <div class="form__visited-item">
+                  <input class="form__visited-input" id="input-park" name="park" type="checkbox" checked/>
+                  <label class="form__visited-label" for="input-park">Слайд-парк</label>
+                </div>
+                <div class="form__visited-item">
+                  <input class="form__visited-input" id="input-mountain" name="mountain" type="checkbox" />
+                  <label class="form__visited-label" for="input-mountain">Гора-Колокол</label>
+                </div>
+                <div class="form__visited-item">
+                  <input class="form__visited-input" id="input-rock" name="rock" type="checkbox" checked/>
+                  <label class="form__visited-label" for="input-rock">Красные скалы</label>
+                </div>
+              </div>
+            </section>
+            <section class="form__item form__feedback">
+              <h2 class="form__title form__title-feedback">Опишите свои эмоции:</h2>
+              <textarea class="form__feedback-text" name="form__feedback-text" id="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
+              <div class="form__submit">
+                <button type="submit" class="form__button button">Отправить отзыв</button>
+                <div class="form__text-required">* — Обязательные поля</div>
+              </div>
+            </section>
+          </div>
+        </form>
       </main>
       <footer class="main-footer">
         <p class="main-footer__hashtag">#Visitsedona</p>
@@ -82,13 +178,31 @@
         </ul>
         <p class="main-footer__copyright">
           <b class="main-footer__copyright-text">Разработано</b>
-          <a class="main-footer__copyright-button" href="https://htmlacademy.ru/" title="html академия" aria-label="Переход на сайт HTML Academy">
+          <a class="main-footer__copyright-button" href="https://htmlacademy.ru/intensive/adaptive" title="html академия" aria-label="Переход на сайт HTML Academy">
             <svg class="main-footer__copyright-logo" width="26.943" height="34.09">
               <use xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>
         </p>
       </footer>
+      <div class="popup popup__error popup--closed">
+        <div class="popup__container-error">
+          <h3 class="popup__title popup__title-error">Что-то пошло не так!</h3>
+          <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        </div>
+        <div class="popup__button-container-error">
+          <button class="popup__button popup__button-error button">Ок</button>
+        </div>
+      </div>
+      <div class="popup popup__success popup--closed">
+        <div class="popup__container-success">
+          <h3 class="popup__title">Ваш отзыв отправлен!</h3>
+          <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+        <div class="popup__button-container-success">
+          <button class="popup__button popup__button-success button">Закрыть окно</button>
+        </div>
+      </div>
     </div>
     <script src="js/script.js"></script>
   </body>
