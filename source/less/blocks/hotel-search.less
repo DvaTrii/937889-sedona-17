@@ -57,7 +57,7 @@
 
 .hotel-search__map {
   background-color: @white;
-  backgroung-image: url("../img/bg-map-mobile@1x.jpg");
+  background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -86,11 +86,12 @@
 
   .hotel-search__button {
     width: 458px;
+    margin-bottom: 60px;
   }
 
   .hotel-search__map {
     background-color: @white;
-    backgroung-image: url("../img/bg-map-tablet@1x.jpg");
+    background-image: url("../img/bg-map-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -105,6 +106,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .hotel-search {
+    padding: 0;
+  }
+
   .hotel-search__heading {
     margin-top: 55px;
   }
@@ -113,12 +118,17 @@
     margin-bottom: 48px;
   }
 
+  .hotel-search__button {
+    margin-bottom: 65px;
+  }
+
   .hotel-search__map {
     background-color: @white;
-    backgroung-image: url("../img/bg-map-desktop@1x.jpg");
+    background-image: url("../img/bg-map-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    width: 1200px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.jpg");

@@ -1,5 +1,5 @@
 .photo {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
   text-align: center;
   position: relative;
 
@@ -9,7 +9,7 @@
     width: 320px;
     height: 1px;
     background-color: @grey-hover;
-    top: -15px;
+    top: -23px;
     left: -7%;
   }
 
@@ -19,19 +19,19 @@
     width: 320px;
     height: 1px;
     background-color: @grey-hover;
-    top: 400px;
+    top: 392px;
     left: -7%;
   }
 }
 
 .photo__image {
-  padding-bottom: 8px;
+  padding-bottom: 17px;
   display: block;
 }
 
 .photo__info {
   width: 290px;
-  padding-left: 5px;
+  padding-left: 0;
   padding-right: 5px;
   text-align: left;
   display: block;
@@ -76,6 +76,9 @@
   font-weight: 700;
   line-height: 24px;
   color: @black;
+  margin-top: 6px;
+  margin-bottom: 0;
+  margin-left: 10px;
 }
 
 @media (min-width: @tablet-width) {
@@ -100,12 +103,25 @@
     justify-content: space-between;
     width: 100%;
     background-color: @bg-grey;
-    padding: 20px;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .photo__heading {
     width: 180px;
-    margin-bottom: 5px;
+    margin-bottom: 0;
+  }
+
+  .photo__likes-container {
+    margin-top: 10px;
+    //margin-right: 15px;
+  }
+
+  .photo__likes-image {
+    margin-left: 5px;
+    margin-top: 0;
   }
 }
 

@@ -5,7 +5,6 @@
     <title>Седона: Форма отзыва</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -93,12 +92,12 @@
               <h2 class="form__title form__title-contacts">Контактная информация:</h2>
               <div class="form__contacts-items">
                 <div class="form__contacts-item">
-                  <label class="form__contacts-label" for="input-phone"><span class="form__contacts-hide">Контактный </span>телефон:</label>
+                  <label class="form__contacts-label" for="input-phone"><span class="form__contacts-hide">Контактный </span>телефон*:</label>
                   <input class="form__contacts-input" id="input-phone" type="tel" placeholder="Введите телефон"/>
                   <div class="form__icon form__icon--phone"></div>
                 </div>
                 <div class="form__contacts-item">
-                  <label class="form__contacts-label" for="input-mail">Электронная почта:</label>
+                  <label class="form__contacts-label" for="input-mail">Электронная почта*:</label>
                   <input class="form__contacts-input" id="input-mail" type="email" placeholder="Введите e-mail"/>
                   <div class="form__icon form__icon--mail"></div>
                 </div>
@@ -115,7 +114,7 @@
                 <label class="form__impression-label" for="input-negatively">Скорее отрицательное</label>
               </div>
               <div class="form__impression-item">
-                <input class="form__impression-input" id="input-difficult" name="impression" type="radio" />
+                <input class="form__impression-input" id="input-difficult" name="impression" type="radio"/>
                 <label class="form__impression-label" for="input-difficult">Затрудняюсь ответить</label>
               </div>
             </section>
@@ -127,15 +126,15 @@
                   <label class="form__visited-label" for="input-bridge">Мост Дьявола</label>
                 </div>
                 <div class="form__visited-item">
+                  <input class="form__visited-input" id="input-mountain" name="mountain" type="checkbox" checked/>
+                  <label class="form__visited-label" for="input-mountain">Гора-Колокол</label>
+                </div>
+                <div class="form__visited-item">
                   <input class="form__visited-input" id="input-park" name="park" type="checkbox" checked/>
                   <label class="form__visited-label" for="input-park">Слайд-парк</label>
                 </div>
                 <div class="form__visited-item">
-                  <input class="form__visited-input" id="input-mountain" name="mountain" type="checkbox" />
-                  <label class="form__visited-label" for="input-mountain">Гора-Колокол</label>
-                </div>
-                <div class="form__visited-item">
-                  <input class="form__visited-input" id="input-rock" name="rock" type="checkbox" checked/>
+                  <input class="form__visited-input" id="input-rock" name="rock" type="checkbox"/>
                   <label class="form__visited-label" for="input-rock">Красные скалы</label>
                 </div>
               </div>
