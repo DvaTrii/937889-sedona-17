@@ -19,10 +19,14 @@
 
 .popup-text {
   margin: 0;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .popup__title {
   margin: 0;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .popup__button {
@@ -119,6 +123,7 @@
 
   .popup__button {
     font-size: 21px;
+    line-height: 26px;
     margin: 0 auto 44px;
   }
 
@@ -147,5 +152,11 @@
     display: block;
     width: 215px;
     margin: 64px auto 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .popup__button-error {
+    width: 272px;
   }
 }

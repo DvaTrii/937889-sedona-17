@@ -40,7 +40,7 @@
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 17px 0 0;
 }
 
 .form__item:not(.form__feedback)::after {
@@ -58,7 +58,7 @@
   margin: 0 auto;
   padding: 20px 0;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
@@ -72,6 +72,10 @@
   display: flex;
   width: 100%;
   margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 5px;
+  }
 }
 
 .form__name-label {
@@ -110,7 +114,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 45px;
+  margin-bottom: 15px;
 }
 
 .form__contacts-label {
@@ -284,6 +288,11 @@
   background-position: 50% 50%;
 }
 
+.form__title-feedback {
+  padding-top: 6px;
+  position: relative;
+}
+
 .form__feedback-text {
   width: 100%;
   min-height: 160px;
@@ -334,11 +343,14 @@
   }
 
   .form__title {
-    padding-top: 0;
+    font-size: 21px;
+    padding-top: 18px;
     position: relative;
+    margin-bottom: 38px;
   }
 
   .form__inner-header {
+    padding-top: 76px;
     text-align: center;
     width: 440px;
     margin-right: auto;
@@ -349,6 +361,7 @@
     width: 440px;
     font-size: 30px;
     line-height: 26px;
+    margin-bottom: 30px;
   }
 
   .form__text {
@@ -380,6 +393,29 @@
     margin: 0 0 30px;
   }
 
+  .form__impression-item {
+    margin-bottom: 25px;
+  }
+
+  .form__contacts {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-top: 13px;
+  }
+
+  .form__title-contacts {
+    margin-bottom: 5px;
+  }
+
+  .form__contacts-item {
+    position: relative;
+    margin-bottom: 27px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
   .form__name {
     align-items: flex-end;
     padding-left: 58px;
@@ -399,21 +435,29 @@
   .form__title-visited {
     max-width: 278px;
     position: relative;
+    margin-bottom: 25px;
+  }
+
+  .form__visited {
+    margin-bottom: 0;
   }
 
   .form__visited-items {
     flex-direction: row;
-    padding: 0 50px;
+    padding: 0 100px;
   }
 
   .form__visited-item {
     width: 50%;
     justify-content: space-between;
     margin-right: -25px;
+    margin-bottom: 33px;
   }
 
-  .form__contacts-item {
+  .form__title-feedback {
+    margin-bottom: 43px;
     position: relative;
+    width: 275px;
   }
 
   .form__feedback-text {
@@ -432,6 +476,8 @@
 
   .form__button {
     width: 324px;
+    margin-top: 47px;
+    padding: 0;
   }
 
   .form__submit {
@@ -440,43 +486,60 @@
     align-items: baseline;
   }
 
-  .form__contacts > .form__title::before,
-  .form__contacts > .form__title::after,
-  .form__visited > .form__title::before,
-  .form__visited > .form__title::after,
-  .form__feedback > .form__title::before,
-  .form__feedback > .form__title::after {
+  .form__title-contacts::before,
+  .form__title-contacts::after,
+  .form__title-visited::before,
+  .form__title-visited::after {
     content: "";
     display: block;
-    width: 170px;
+    width: 120px;
     height: 1px;
     background: @grey-hover;
     transform: translateY(-50%);
     position: absolute;
   }
 
-  .form__contacts > .form__title::before,
-  .form__contacts > .form__title::after {
-    top: 10%;
+  .form__title-feedback::before,
+  .form__title-feedback::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: @grey-hover;
+    transform: translateY(-50%);
+    position: absolute;
   }
 
-  .form__visited > .form__title::after,
-  .form__feedback > .form__title::after {
+  .form__title-contacts::before,
+  .form__title-contacts::after {
+    top: 50%;
+  }
+
+  .form__title-visited::after {
     left: -66%;
     top: 50%;
   }
 
-  .form__contacts > .form__title::after {
+  .form__title-feedback::after {
+    left: -66%;
+    top: 50%;
+  }
+
+  .form__title-contacts::after {
     left: 0;
   }
 
-  .form__visited > .form__title::before,
-  .form__feedback > .form__title::before {
+  .form__title-visited::before {
     right: -66%;
     top: 50%;
   }
 
-  .form__contacts > .form__title::before {
+  .form__title-feedback::before {
+    right: -66%;
+    top: 50%;
+  }
+
+  .form__title-contacts::before {
     right: 0;
   }
 }
@@ -497,12 +560,42 @@
     }
   }
 
+  .form__inner-header {
+    padding-top: 115px;
+  }
+
   .form__title {
-    padding-bottom: 60px;
+    margin-bottom: 32px;
+    padding-bottom: 20px;
   }
 
   .form__text {
-    margin-bottom: 70px;
+    margin-bottom: 20px;
+  }
+
+  .form__name {
+    padding-left: 80px;
+  }
+
+  .form__impression {
+    padding-left: 0;
+  }
+
+  .form__title-impression {
+    padding-left: 80px;
+  }
+
+  .form__contacts {
+    margin-bottom: 7px;
+  }
+
+  .form__title-contacts {
+    margin-bottom: 52px;
+  }
+
+  .form__contacts-label {
+    margin-left: 0;
+    margin-top: 17px;
   }
 
   .form__icon {
@@ -510,11 +603,7 @@
   }
 
   .form__icon--phone {
-    right: 50px;
-  }
-
-  .form__contacts-label {
-    margin-top: 17px;
+    right: 80px;
   }
 
   .form__contacts-hide {
@@ -537,8 +626,17 @@
     flex-direction: row;
   }
 
+  .form__visited {
+    padding-top: 0;
+  }
+
+  .form__title-visited {
+    margin-bottom: 22px;
+  }
+
   .form__button {
     width: 480px;
+    margin-bottom: 40px;
   }
 
   .form__visited-items {
@@ -546,7 +644,60 @@
   }
 
   .form__visited-item {
-    width: 25%;
-    margin-right: -30px;
+    width: 21%;
+    margin-right: 0;
+  }
+
+  .form__title-feedback {
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  .form__title-contacts::before,
+  .form__title-contacts::after,
+  .form__title-visited::before,
+  .form__title-visited::after,
+  .form__title-feedback::before,
+  .form__title-feedback::after {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 3px;
+    background: @grey-hover;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+
+  .form__title-contacts::before,
+  .form__title-contacts::after {
+    top: 50%;
+  }
+
+  .form__title-visited::after {
+    left: -123%;
+    top: 50%;
+  }
+
+  .form__title-feedback::after {
+    left: -123%;
+    top: 50%;
+  }
+
+  .form__title-contacts::after {
+    left: 0;
+  }
+
+  .form__title-visited::before {
+    right: -123%;
+    top: 50%;
+  }
+
+  .form__title-feedback::before {
+    right: -123%;
+    top: 50%;
+  }
+
+  .form__title-contacts::before {
+    right: 0;
   }
 }

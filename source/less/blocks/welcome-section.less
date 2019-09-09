@@ -16,7 +16,9 @@
 
 .welcome-section-not-index {
   padding-top: 50px;
-  padding-bottom: 62px;
+  padding-bottom: 60px;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
 }
 
 .welcome-section__image {
@@ -33,6 +35,7 @@
   padding-top: 41px;
   padding-bottom: 14px;
   text-align: center;
+  margin-bottom: -20px;
 
   &::before {
     position: absolute;
@@ -70,6 +73,7 @@
 
 @media (min-width: @tablet-width) {
   .welcome-section {
+    padding-top: 77px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -78,11 +82,19 @@
     }
   }
 
+  .welcome-section-not-index {
+    padding-top: 90px;
+    padding-bottom: 115px;
+  }
+
   .welcome-section__image {
     width: 460px;
   }
 
   .welcome-section__slogans {
+    padding-top: 56px;
+    margin-bottom: 0;
+
     &::before {
       position: absolute;
       content: "";
@@ -115,6 +127,11 @@
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 2400 auto;
     }
+  }
+
+  .welcome-section-not-index {
+    padding-top: 100px;
+    padding-bottom: 115px;
   }
 
   .welcome-section__slogans {
