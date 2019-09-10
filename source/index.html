@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <svg style="display: none;">
@@ -59,9 +62,9 @@
           <img class="welcome-section__image" src="img/text-sedona-index.svg" width="281" height="214" alt="Добро пожаловать в Седону">
           <p class="visually-hidden">Because the Grand Canyon sucks</p>
         </section>
-        <div class="welcome-section__slogans">
-          <p class="welcome-section__slogans-underrated">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-          <h2 class="welcome-section__slogans-heading-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
+        <div class="slogans">
+          <p class="slogans__underrated">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+          <h2 class="slogans__heading-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
         </div>
         <section class="advantages">
           <div class="advantages__item">
@@ -138,7 +141,7 @@
           <p class="hotel-search__text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="hotel-search__button button">Найти гостиницу</button>
           <h2 class="visually-hidden">Как до нас добраться</h2>
-          <iframe class="hotel-search__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050596124!2d-111.83015791370394!3d34.85437338105623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1567855243229!5m2!1sru!2sru" width="1200" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <iframe class="hotel-search__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050596124!2d-111.83015791370394!3d34.85437338105623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1567855243229!5m2!1sru!2sru" width="1200" height="350" style="border:0;" allowfullscreen=""></iframe>
         </section>
       </main>
       <footer class="main-footer">
